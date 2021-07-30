@@ -32,7 +32,20 @@ const iniciarDescarte = async function(){
          tdmedidor.innerText = lecturas[i].medidor;
 
          let tdvalor = document.createElement("td");
-         tdvalor.innerText = lecturas[i].valor;
+         tdvalor.classList.add("text-center");
+         let icono = document.createElement("i");
+
+         if (lecturas[i].medida == "Kilowatts"){
+             tdvalor.innerText = tdvalor.concat(lecturas[i].valor, " kW");
+         } else if (lecturas[i].medida == "Watts"){
+            tdvalor.innerText = tdvalor.concat(lecturas[i].valor, " W");
+         } else if (lecturas[i].medida == "Temperatura"){
+            tdvalor.innerText = tdvalor.concat(lecturas[i].valor, " C");
+            if (lecturas[i].valor > 60){
+                icono.classList.add("fas", "fa-fire", "text-danger","fa-2x");
+                tdvalor.appendChild(icono);
+            };
+         };
  
          let tdaccion = document.createElement("td");
          let botonDescartar = document.createElement("button");

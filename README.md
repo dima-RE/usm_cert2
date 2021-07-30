@@ -7,3 +7,7 @@ Certamen 2 USM
     - Modelo = Lectura
     - Controlador = LecturasController
     Aún así, espero haya quedado decente.
+
+## Sinceridad:
+    Al final nunca me puse al día con la clase donde presentaba la Selección en la tabla xd.
+    Pa que no se esfuerce buscándolo.

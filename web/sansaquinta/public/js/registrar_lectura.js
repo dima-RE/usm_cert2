@@ -69,7 +69,7 @@ document.querySelector("#registrar-btn").addEventListener("click",async()=>{
 
     if (comp == 1){
         let res = await registrarLectura(lectura);
-        await Swal.fire("Éxito",`Lectura creada exitosamente`,"info");
+        await Swal.fire("Éxito","Lectura creada exitosamente","info");
         window.location.href = "consultar_mediciones";
     }
 });
