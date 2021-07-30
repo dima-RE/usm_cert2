@@ -24,9 +24,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active h4" aria-current="page" href="{{route('home')}}">Inicio</a>
-                        <a class="nav-link h5" href="{{route('registrar_lectura')}}">Registrar Lecturas</a>
-                        <a class="nav-link h5" href="{{route('consultar_mediciones')}}">Mediciones Existentes</a>
+                        <a class="nav-link active h4 text-light" aria-current="page" href="{{route('home')}}">Inicio</a>
+                        <a class="nav-link h4 text-light" href="{{route('registrar_lectura')}}">Registrar Lecturas</a>
+                        <a class="nav-link h4 text-light" href="{{route('consultar_mediciones')}}">Mediciones Existentes</a>
                     </div>
                 </div>
             </div>
