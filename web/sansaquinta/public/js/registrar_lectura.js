@@ -21,7 +21,7 @@ const cargarMedidas = async()=>{
     });
 }
 
-const comprobarCargar = (l)=>{
+const comprobar = (l)=>{
     let errores = "";
 
     if (l.fecha == ""){
@@ -65,11 +65,11 @@ document.querySelector("#registrar-btn").addEventListener("click",async()=>{
     lectura.valor = parseInt(valor);
     lectura.medida = medida;
 
-    let comp = await comprobar(lectura);
+    let comp = comprobar(lectura);
 
     if (comp == 1){
         let res = await registrarLectura(lectura);
         await Swal.fire("Éxito",`Lectura creada exitosamente`,"info");
-        //window.location.href = "consultar_mediciones";
+        window.location.href = "consultar_mediciones";
     }
 });
