@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LecturasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get("medidores/get", [LecturasController::class, "getMedidores"]);
+Route::get("medidas/get", [LecturasController::class, "getMedidas"]);
+Route::get("lecturas/get", [LecturasController::class, "getLecturas"]);
+Route::post("lecturas/post", [LecturasController::class, "registrarLectura"]);
+Route::post("lecturas/delete", [LecturasController::class, "descartarLectura"]);

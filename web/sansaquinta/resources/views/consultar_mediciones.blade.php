@@ -20,3 +20,10 @@
         </div>
     </div>
 @endsection
+
+@section('javascript')
+    
+    <script src="{{asset("js/lecturasService.js")}}"></script>
+    <script src="{{asset("js/consultar_mediciones.js")}}"></script>
+
+@endsection
